@@ -14,6 +14,9 @@ docker exec -it [コンテナ名] sh
 /app # npm install  
 /app # npm run build  
   
+vue-cli · Failed to write the file at: /app/.babelrc  
+というエラーが出た場合、docker-compose downでコンテナを削除して、buildからやり直したらちゃんと動いた。
+  
 localhost:9000にアクセスし、表示されるか確認。  
   
 参考サイト：  
