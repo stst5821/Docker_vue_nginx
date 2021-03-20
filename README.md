@@ -1,7 +1,12 @@
 Vueとnginxのdocker開発環境  
 クローンしたら以下を実行  
   
+docker-compose build  
+docker-compose up -d  
+  
+# vueコンテナの中に入る。(nginxコンテナではないので注意。)  
 docker exec -it [コンテナ名] sh  
+  
 // コンテナ内に入れたら  
 (/app <= 現在のディレクトリを表す)  
   
