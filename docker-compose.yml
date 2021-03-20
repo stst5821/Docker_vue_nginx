@@ -1,0 +1,15 @@
+version: '3'
+services:
+  nginx:
+    build: ./nginx
+    ports:
+      - '9000:80'
+    volumes:
+      - ./data/www:/var/www/html
+      - ./nginx/server.conf:/etc/nginx/nginx.conf
+
+  vue:
+    build: ./vue
+    volumes:
+      - ./data/www:/app
+    tty: true
